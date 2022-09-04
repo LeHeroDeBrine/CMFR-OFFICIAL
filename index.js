@@ -220,7 +220,7 @@ Client.on("messageCreate", message => {
 
 Client.on("guildMemberAdd", async member => {
     console.log("un membre est arrivé ! ");
-    Client.channels.cache.get("1008824866360803460").send(member.displayName + " est arrivé ! ");
+    Client.channels.cache.get("993964162151624724").send(member.displayName + " est arrivé ! ");
 
     var canvas = Canvas.createCanvas(1809, 1080);
 
@@ -252,14 +252,14 @@ Client.on("guildMemberAdd", async member => {
 
     var attachment = new Discord.MessageAttachment(canvas.toBuffer(), "Welcome.png");
 
-    Client.channels.cache.get("1008824866360803460").send({files : [attachment]});
+    Client.channels.cache.get("993964162151624724").send({files : [attachment]});
 
 });
 
 
 Client.on("guildMemberRemove", async member => {
     console.log("un membre est partie . ");
-    Client.channels.cache.get("1008824866360803461").send(member.displayName + " est partie . ");
+    Client.channels.cache.get("993964243382714399").send(member.displayName + " est partie . ");
 
     var canvas = Canvas.createCanvas(1809, 1080);
 
@@ -291,7 +291,7 @@ Client.on("guildMemberRemove", async member => {
 
     var attachment2 = new Discord.MessageAttachment(canvas.toBuffer(), "Bye.png");
 
-    Client.channels.cache.get("1008824866360803461").send({files : [attachment2]});
+    Client.channels.cache.get("993964243382714399").send({files : [attachment2]});
 
 });
 
